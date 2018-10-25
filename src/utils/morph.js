@@ -135,9 +135,8 @@ export function normalizePaths(fromPaths, toPaths, _options) {
 }
 
 
-export function getProgress(fromPaths, toPaths, progress) {
-    // TODO easing
-    // progress=easings[this._easing](progress);
+export function getProgress(fromPaths, toPaths, progress, easing = (t) => t) {
+    progress = easing(progress);
     var i = 0;
     var newPaths = [];
     var len = fromPaths.length;

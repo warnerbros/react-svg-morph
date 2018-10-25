@@ -30,7 +30,7 @@ class MorphTransition extends React.Component {
     update(progress) {
         this.setChildren();
         this.normalize();
-        let current = getProgress(this.from, this.to, progress);
+        let current = getProgress(this.from, this.to, progress, this.props.easing);
         this.setState({current: current});
     }
 
@@ -111,6 +111,7 @@ MorphTransition.propTypes = {
             );
         }
     },
+    easing: PropTypes.func,
 };
 
 MorphTransition.defaultProps = {
@@ -120,5 +121,5 @@ MorphTransition.defaultProps = {
     rotation: 'clockwise',
     progress: 0,
     preserveAspectRatio: 'xMidYMid meet',
-    easing: function(t) { return t; }
+    easing: function(t) { return t; },
 };

@@ -7,7 +7,9 @@
   "scripts": {
     "build": "babel src --out-dir lib",
     "prepublish": "npm run build",
-    "eslint": "eslint src"
+    "eslint": "eslint src",
+    "watch": "watch 'yarn run build' ./src",
+    "start": "yarn run watch"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,7 @@
     "eslint": "^1.8.0",
     "eslint-config-airbnb": "^0.1.0",
     "eslint-plugin-react": "^3.6.3",
+    "watch": "^1.0.2",
     "webpack": "^1.12.2"
   },
   "peerDependencies": {
