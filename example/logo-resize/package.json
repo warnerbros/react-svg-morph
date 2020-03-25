@@ -12,7 +12,7 @@
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "react-icon-base": "0.0.5",
-    "react-icons": "^0.1.4",
+    "react-icons": "^0.3.1",
     "react-svg-morph": "*",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.1"
