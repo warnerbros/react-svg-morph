@@ -1,7 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Goran Gajic <fero.null@gmail.com>",
   "dependencies": {
@@ -19,6 +21,8 @@
     "react-pure-render": "^1.0.2",
     "react-svg-morph": "^0.1.2",
     "webpack": "^1.12.2",
-    "webpack-dev-server": "^1.12.1"
-  }
+    "webpack-dev-server": "^1.12.1",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
